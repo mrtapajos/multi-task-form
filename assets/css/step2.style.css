@@ -1,0 +1,130 @@
+:root {
+  --cool-gray: hsl(231, 11%, 63%);
+  --marine-blue: hsl(213, 96%, 18%);
+}
+
+#plan-selection {
+  padding: 2rem 4rem;
+  margin-inline: auto;
+}
+
+#plan-options {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 1px solid var(--cool-gray);
+  padding: 1rem;
+  width: 140px;
+  height: 160px;
+  border-radius: 8px;
+  line-height: 24px;
+}
+
+.plan img {
+  position: relative;
+  right: 2rem;
+  height: 40px;
+}
+
+.plan strong {
+  color: var(--marine-blue);
+}
+
+.plan p {
+  color: var(--cool-gray);
+}
+
+/* SWITCH BUTTON */
+
+#checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--marine-blue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--marine-blue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch-label {
+  color: var(--cool-gray);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+  margin-top: 8rem;
+}
+
+.buttons-container button {
+  height: 2.5rem;
+  width: 7rem;
+  padding: 8px;
+  color: #fefefe;
+  font-weight: 700;
+  background-color: var(--marine-blue);
+  border: none;
+  border-radius: 8px;
+}
+
+.buttons-container button:hover {
+  cursor: pointer;
+  background-color: #fefefe;
+  color: var(--marine-blue);
+  transition: 0.3s;
+}

@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cool-gray: hsl(231, 11%, 63%);
+  --marine-blue: hsl(213, 96%, 18%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef5ff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  display: flex;
+  background-color: #fefefe;
+  height: 600px;
+  width: 1000px;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+#sidebar {
+  background-image: url("../images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30%;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.step-index {
+  display: flex;
+  gap: 1rem;
+  color: #fefefe;
+  font-weight: 700;
+}
+
+.step-index span {
+  border: 1px solid #fefefe;
+  border-radius: 80px;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+
+.step-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 16px;
+}
+
+.step-title p:first-child {
+  color: var(--cool-gray);
+  opacity: 0.8;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  margin-inline: 2rem;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-title h1 {
+  font-size: 30px;
+  color: var(--marine-blue);
+}
+
+.section-title p {
+  color: var(--cool-gray);
+}
+
+#form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  color: var(--marine-blue);
+}
+
+#form-selection input:active {
+  /* ?? */
+  border-color: var(--marine-blue);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#form-section input {
+  height: 40px;
+  border-radius: 5px;
+  padding: 12px;
+  color: var(--marine-blue);
+  font-weight: 700;
+  border: 1px solid hsl(229, 24%, 87%);
+  outline: none;
+}
+
+#form-section button {
+  width: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  top: 6rem;
+  left: 20rem;
+  color: #fefefe;
+  font-weight: 700;
+  background-color: hsl(243, 100%, 62%);
+  cursor: pointer;
+}
+
+#form-section button:hover {
+  background-color: var(--marine-blue);
+  transition: 0.3s;
+}
+
+#plan-selection,
+#form-section,
+#review-step,
+#final-message {
+  display: none;
+}

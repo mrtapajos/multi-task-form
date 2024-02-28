@@ -1,0 +1,64 @@
+:root {
+  --cool-gray: hsl(231, 11%, 63%);
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+}
+
+#addon-selection {
+  margin: 2rem 4rem;
+}
+
+#addon-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.addon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--purplish-blue);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 440px;
+}
+
+.addon input {
+  margin-right: 1rem;
+}
+
+.addon span {
+  margin-right: 1rem;
+}
+
+.addon-title {
+  color: var(--marine-blue);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.addon span p:nth-child(2) {
+  color: var(--cool-gray);
+}
+
+.addon span:last-child {
+  color: var(--purplish-blue);
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+#second-addon-content {
+  margin-right: 4rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5); /* Increase the size of the checkbox */
+  border-radius: 3px;
+}
+
+.addon input:checked ~ span {
+  background-color: lightblue;
+}

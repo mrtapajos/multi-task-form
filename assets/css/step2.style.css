@@ -128,3 +128,12 @@ input:checked + .slider:before {
   color: var(--marine-blue);
   transition: 0.3s;
 }
+
+.buttons-container .goback-btn {
+  background: none;
+  color: var(--cool-gray);
+}
+
+.buttons-container .goback-btn:hover {
+  color: var(--marine-blue);
+}

@@ -63,8 +63,8 @@ main {
 }
 
 .step-title p:first-child {
-  color: var(--cool-gray);
-  opacity: 0.8;
+  color: hsl(231, 100%, 99%);
+  opacity: 0.5;
 }
 
 #form-section {
@@ -141,7 +141,7 @@ main {
 
 #plan-selection,
 #form-section,
-#review-step,
+#addon-selection,
 #final-message {
   display: none;
 }
